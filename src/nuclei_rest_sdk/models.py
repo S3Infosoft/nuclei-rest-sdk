@@ -7,7 +7,7 @@ from datetime import datetime
 from typing import Any
 
 
-@dataclass(slots=True)
+@dataclass
 class TemplateInfo:
     """Metadata embedded in a nuclei template."""
 
@@ -49,7 +49,7 @@ class TemplateInfo:
         )
 
 
-@dataclass(slots=True)
+@dataclass
 class Finding:
     """A single vulnerability finding emitted by Nuclei."""
 
